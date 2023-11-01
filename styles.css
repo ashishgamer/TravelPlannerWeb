@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    width: 100%; /* Set the width to 100% to span the entire screen */
+    text-align: center;
+}
+  
+  /* Apply a background color and text color to the entire page */
+  body {
+    background-image: url('snowy-mountains.jpg');
+    background-size: cover;
+    margin: 0; /* Remove default margin to fill the entire viewport */
+    padding: 0; /* Remove default padding to fill the entire viewport */
+    color: #333;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the form container */
+  .form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 1px #aaa;
+    width: 400px;
+    margin: 0 auto; /* Add this line to center the form */
+    text-align: center;
+  }
+  
+  /* Center the form horizontally within the container */
+  .inline-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style form fields and buttons */
+  .form-group {
+    margin: 10px;
+  }
+  
+  /* Center the buttons horizontally within the form */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Add margin between the buttons */
+  .btn-primary + .btn-success {
+    margin-left: 10px; /* You can adjust this value for the desired spacing */
+  }
+  
+  .app-heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    backdrop-filter: blur(5px); /* Apply a blur effect */
+    z-index: 1000; /* Ensure the heading is above other content */
+  }
+  
+  /* Style the footer text fixed at the bottom */
+  .footer-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 5px 0; /* Adjust padding as needed */
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* Add custom styles here */
+  .results-box {
+    max-width: 600px;
+    margin: 0 auto;
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Maintain scrollability for the sections */
+.result-section {
+    margin-bottom: 20px;
+}
+
+/* Style for collapsible headings */
+.collapsible-heading {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the arrow icon */
+.collapsible-arrow {
+    font-size: 18px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+/* Rotate the arrow icon when section is collapsed */
+.collapsible-heading.collapsed .collapsible-arrow {
+    transform: rotate(270deg);
+}
+
+/* Additional styling for the arrow icon */
+.collapsible-arrow:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Style for flight cards */
+.flight-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Style for airline name */
+.airline {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Style for flight details */
+.flight-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for flight locations */
+.flight-location {
+    text-align: center;
+}
+
+/* Style for city and country */
+.city {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.country {
+    font-size: 14px;
+}
+

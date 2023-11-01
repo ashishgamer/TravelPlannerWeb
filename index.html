@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1 class="app-heading">Travel Planner</h1>
+        <div class="form-container">
+            <h3 class="text-center">Plan your travel!</h3>
+            <form id="travel-form" class="inline-form">
+                <div>
+                    <div class="form-group">
+                        <label htmlFor="source">Source:</label>
+                        <input type="text" class="form-control" id="source" />
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination" />
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="travelDate">Travel Date:</label>
+                        <input type="date" class="form-control" id="travelDate" />
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-3" id="rest-btn">Search (REST)</button>
+                    <button class="btn btn-success" id="graphql-btn">Search (GraphQL)</button>
+                </div>
+            </form>
+        </div>
+        <div id="results-container" style="display: none; margin-top: 10px;">
+            <h2 class="text-center mb-3" id="results-heading">Search Results</h2>
+            <div id="results" class="results-box">
+                <div class="result-section">
+                    <h3 class="collapsible-heading" id="flights-heading">
+                        <span class="collapsible-arrow">▼</span> Flights
+                    </h3>
+                    <div id="flights-results" class="result-content"></div>
+                </div>
+                <div class="result-section">
+                    <h3 class="collapsible-heading" id="hotels-heading">
+                        <span class="collapsible-arrow">▼</span> Hotels
+                    </h3>
+                    <div id="hotels-results" class="result-content"></div>
+                </div>
+                <div class="result-section">
+                    <h3 class="collapsible-heading" id="activities-heading">
+                        <span class="collapsible-arrow">▼</span> Activities
+                    </h3>
+                    <div id="activities-results" class="result-content"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-text text-center mt-5">
+            Project done for final semester dissertation by Ashish Ranjan (2021MT93359)
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
